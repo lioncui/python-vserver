@@ -15,7 +15,7 @@
 #!/usr/bin/python
 # -*- coding:UTF-8 -*-
 
-DEBUG = True
+DEBUG = False
 SERVER_BIND = '0.0.0.0'
 HTTP_PORT = 8080
 HTTPS_PORT = 8443

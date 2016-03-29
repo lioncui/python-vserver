@@ -113,5 +113,5 @@ ssl_ctx.load_cert_chain(SERVER_SSL_CERT, SERVER_SSL_KEY, SERVER_SSL_PASS)
 ssl_ctx.verify_mode = ssl.CERT_REQUIRED
 ssl_ctx.load_verify_locations(cafile = TRUSTED_CACERT)
 app.threaded = True
-#thread.start_new_thread(app.run, (SERVER_BIND,HTTP_PORT,))
+thread.start_new_thread(app.run, (SERVER_BIND,HTTP_PORT,))
 app.run(SERVER_BIND, HTTPS_PORT, ssl_context = ssl_ctx)
